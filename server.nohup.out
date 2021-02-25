@@ -7,18 +7,824 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.4.3)
 
-2021-02-25 14:52:20.108  INFO 57488 --- [           main] m.s.SpringBootAdminServerDemoApplication : Starting SpringBootAdminServerDemoApplication v1.0.0 using Java 11.0.8 on xuzeweideMacBook-Pro.local with PID 57488 (/Users/xuzewei/microprograms/spring-boot-admin-server-demo/target/spring-boot-admin-server-demo-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-boot-admin-server-demo)
-2021-02-25 14:52:20.112  INFO 57488 --- [           main] m.s.SpringBootAdminServerDemoApplication : No active profile set, falling back to default profiles: default
-2021-02-25 14:52:23.225  INFO 57488 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4608 (http)
-2021-02-25 14:52:23.253  INFO 57488 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-25 14:52:23.254  INFO 57488 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-02-25 14:52:23.413  INFO 57488 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-02-25 14:52:23.413  INFO 57488 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3152 ms
-2021-02-25 14:52:24.498  INFO 57488 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-25 14:52:24.832  WARN 57488 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2021-02-25 14:52:25.821  INFO 57488 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-02-25 14:52:25.932  INFO 57488 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4608 (http) with context path ''
-2021-02-25 14:52:25.991  INFO 57488 --- [           main] m.s.SpringBootAdminServerDemoApplication : Started SpringBootAdminServerDemoApplication in 6.957 seconds (JVM running for 8.11)
-2021-02-25 14:53:09.249  INFO 57488 --- [nio-4608-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-25 14:53:09.250  INFO 57488 --- [nio-4608-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-25 14:53:09.257  INFO 57488 --- [nio-4608-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-02-25 14:56:40.206  INFO 57658 --- [           main] m.s.SpringBootAdminServerDemoApplication : Starting SpringBootAdminServerDemoApplication v1.0.0 using Java 11.0.8 on xuzeweideMacBook-Pro.local with PID 57658 (/Users/xuzewei/microprograms/spring-boot-admin-server-demo/target/spring-boot-admin-server-demo-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-boot-admin-server-demo)
+2021-02-25 14:56:40.218  INFO 57658 --- [           main] m.s.SpringBootAdminServerDemoApplication : No active profile set, falling back to default profiles: default
+2021-02-25 14:56:44.481  INFO 57658 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4608 (http)
+2021-02-25 14:56:44.515  INFO 57658 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-25 14:56:44.515  INFO 57658 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 14:56:44.680  INFO 57658 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-25 14:56:44.680  INFO 57658 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4259 ms
+2021-02-25 14:56:45.894  INFO 57658 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:56:46.311  WARN 57658 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-25 14:56:47.526  INFO 57658 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 14:56:47.606  INFO 57658 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4608 (http) with context path ''
+2021-02-25 14:56:47.642  INFO 57658 --- [           main] m.s.SpringBootAdminServerDemoApplication : Started SpringBootAdminServerDemoApplication in 8.566 seconds (JVM running for 9.607)
+2021-02-25 14:56:49.663  INFO 57658 --- [nio-4608-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 14:56:49.664  INFO 57658 --- [nio-4608-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-25 14:56:49.670  INFO 57658 --- [nio-4608-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-02-25 15:40:57.383  INFO 57658 --- [ctor-http-nio-1] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=414909be80d0, version=2, registration=Registration(name=spring-boot-application, managementUrl=http://172.25.16.187:8080/actuator, healthUrl=http://172.25.16.187:8080/actuator/health, serviceUrl=http://172.25.16.187:8080/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={diskSpace={status=UP, details={total=121123069952, free=25299881984, threshold=10485760, exists=true}}, ping={status=UP}}), statusTimestamp=2021-02-25T07:01:04.653028Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://172.25.16.187:8080/actuator/caches), loggers=Endpoint(id=loggers, url=http://172.25.16.187:8080/actuator/loggers), health=Endpoint(id=health, url=http://172.25.16.187:8080/actuator/health), env=Endpoint(id=env, url=http://172.25.16.187:8080/actuator/env), heapdump=Endpoint(id=heapdump, url=http://172.25.16.187:8080/actuator/heapdump), scheduledtasks=Endpoint(id=scheduledtasks, url=http://172.25.16.187:8080/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://172.25.16.187:8080/actuator/mappings), beans=Endpoint(id=beans, url=http://172.25.16.187:8080/actuator/beans), configprops=Endpoint(id=configprops, url=http://172.25.16.187:8080/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://172.25.16.187:8080/actuator/threaddump), metrics=Endpoint(id=metrics, url=http://172.25.16.187:8080/actuator/metrics), conditions=Endpoint(id=conditions, url=http://172.25.16.187:8080/actuator/conditions), info=Endpoint(id=info, url=http://172.25.16.187:8080/actuator/info)}), buildVersion=null, tags=Tags(values={}))
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to GET health [DefaultWebClient]
+Stack trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:70) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4046) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:224) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:273) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:413) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:250) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:491) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:299) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:97) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:302) ~[reactor-netty-http-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:166) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:427) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$5(SimpleDequePool.java:309) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:565) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:464) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise$1.tryFailure(TransportConnector.java:515) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:40:57.383  INFO 57658 --- [ctor-http-nio-4] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=a973ff14be49, version=2, registration=Registration(name=spring-boot-application, managementUrl=http://localhost:8080/actuator, healthUrl=http://localhost:8080/actuator/health, serviceUrl=http://localhost:8080/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={diskSpace={status=UP, details={total=121123069952, free=25326780416, threshold=10485760, exists=true}}, ping={status=UP}}), statusTimestamp=2021-02-25T07:14:39.104407Z, info=Info(values={}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://localhost:8080/actuator/caches), loggers=Endpoint(id=loggers, url=http://localhost:8080/actuator/loggers), health=Endpoint(id=health, url=http://localhost:8080/actuator/health), env=Endpoint(id=env, url=http://localhost:8080/actuator/env), heapdump=Endpoint(id=heapdump, url=http://localhost:8080/actuator/heapdump), scheduledtasks=Endpoint(id=scheduledtasks, url=http://localhost:8080/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://localhost:8080/actuator/mappings), beans=Endpoint(id=beans, url=http://localhost:8080/actuator/beans), configprops=Endpoint(id=configprops, url=http://localhost:8080/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://localhost:8080/actuator/threaddump), metrics=Endpoint(id=metrics, url=http://localhost:8080/actuator/metrics), conditions=Endpoint(id=conditions, url=http://localhost:8080/actuator/conditions), info=Endpoint(id=info, url=http://localhost:8080/actuator/info)}), buildVersion=null, tags=Tags(values={}))
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/127.0.0.1:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8080
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to GET health [DefaultWebClient]
+Stack trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:70) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4046) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:224) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:273) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:413) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:250) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:491) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:299) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:97) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:302) ~[reactor-netty-http-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:166) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:427) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$5(SimpleDequePool.java:309) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:565) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:464) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise$1.tryFailure(TransportConnector.java:515) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8080
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.488 ERROR 57658 --- [nio-4608-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.488 ERROR 57658 --- [nio-4608-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.488 ERROR 57658 --- [nio-4608-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.489 ERROR 57658 --- [nio-4608-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.489 ERROR 57658 --- [nio-4608-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.602 ERROR 57658 --- [nio-4608-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.608 ERROR 57658 --- [nio-4608-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.617 ERROR 57658 --- [nio-4608-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.618 ERROR 57658 --- [io-4608-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:41:04.620 ERROR 57658 --- [nio-4608-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:42:30.281 ERROR 57658 --- [nio-4608-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:42:30.281 ERROR 57658 --- [nio-4608-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:16.274 ERROR 57658 --- [nio-4608-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:16.274 ERROR 57658 --- [nio-4608-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:18.724 ERROR 57658 --- [nio-4608-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:18.727 ERROR 57658 --- [nio-4608-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:22.166 ERROR 57658 --- [nio-4608-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:22.172 ERROR 57658 --- [io-4608-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:26.088 ERROR 57658 --- [nio-4608-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:26.090 ERROR 57658 --- [nio-4608-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:34.394 ERROR 57658 --- [nio-4608-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:34.394 ERROR 57658 --- [nio-4608-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:47.033 ERROR 57658 --- [nio-4608-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:44:47.033 ERROR 57658 --- [nio-4608-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:45:03.112 ERROR 57658 --- [nio-4608-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:45:03.113 ERROR 57658 --- [nio-4608-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080] with root cause
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:46:17.362  INFO 57658 --- [ctor-http-nio-1] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=a973ff14be49, version=5, registration=Registration(name=spring-boot-application, managementUrl=http://localhost:8080/actuator, healthUrl=http://localhost:8080/actuator/health, serviceUrl=http://localhost:8080/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2021-02-25T07:45:37.443867Z, info=Info(values={}), endpoints=Endpoints(endpoints={health=Endpoint(id=health, url=http://localhost:8080/actuator/health), info=Endpoint(id=info, url=http://localhost:8080/actuator/info)}), buildVersion=null, tags=Tags(values={}))
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/127.0.0.1:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8080
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to GET health [DefaultWebClient]
+Stack trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:70) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4046) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:224) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:273) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:413) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:250) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:491) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:299) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:97) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:302) ~[reactor-netty-http-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:166) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:427) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$5(SimpleDequePool.java:309) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:565) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:464) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise$1.tryFailure(TransportConnector.java:515) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8080
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:46:17.375  INFO 57658 --- [ctor-http-nio-2] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=414909be80d0, version=5, registration=Registration(name=spring-boot-application, managementUrl=http://172.25.16.187:8080/actuator, healthUrl=http://172.25.16.187:8080/actuator/health, serviceUrl=http://172.25.16.187:8080/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2021-02-25T07:45:37.443576Z, info=Info(values={}), endpoints=Endpoints(endpoints={health=Endpoint(id=health, url=http://172.25.16.187:8080/actuator/health), info=Endpoint(id=info, url=http://172.25.16.187:8080/actuator/info)}), buildVersion=null, tags=Tags(values={}))
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to GET health [DefaultWebClient]
+Stack trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:70) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4046) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:224) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:273) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:413) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:250) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:491) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:299) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:97) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:302) ~[reactor-netty-http-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:166) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:427) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$5(SimpleDequePool.java:309) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:565) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:464) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise$1.tryFailure(TransportConnector.java:515) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:48:37.356  INFO 57658 --- [ctor-http-nio-1] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=a973ff14be49, version=7, registration=Registration(name=spring-boot-application, managementUrl=http://localhost:8080/actuator, healthUrl=http://localhost:8080/actuator/health, serviceUrl=http://localhost:8080/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2021-02-25T07:47:57.889088Z, info=Info(values={}), endpoints=Endpoints(endpoints={health=Endpoint(id=health, url=http://localhost:8080/actuator/health), info=Endpoint(id=info, url=http://localhost:8080/actuator/info)}), buildVersion=null, tags=Tags(values={}))
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/127.0.0.1:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8080
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to GET health [DefaultWebClient]
+Stack trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:70) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4046) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:224) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:273) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:413) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:250) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:491) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:299) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:97) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:302) ~[reactor-netty-http-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:166) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:427) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$5(SimpleDequePool.java:309) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:565) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:464) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise$1.tryFailure(TransportConnector.java:515) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8080
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-02-25 15:48:37.369  INFO 57658 --- [ctor-http-nio-2] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=414909be80d0, version=7, registration=Registration(name=spring-boot-application, managementUrl=http://172.25.16.187:8080/actuator, healthUrl=http://172.25.16.187:8080/actuator/health, serviceUrl=http://172.25.16.187:8080/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2021-02-25T07:47:57.889088Z, info=Info(values={}), endpoints=Endpoints(endpoints={health=Endpoint(id=health, url=http://172.25.16.187:8080/actuator/health), info=Endpoint(id=info, url=http://172.25.16.187:8080/actuator/info)}), buildVersion=null, tags=Tags(values={}))
+
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /172.25.16.187:8080; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to GET health [DefaultWebClient]
+Stack trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137) ~[spring-webflux-5.3.4.jar!/:5.3.4]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:70) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4046) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:221) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:224) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:273) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:413) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:250) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:491) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:299) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:97) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:302) ~[reactor-netty-http-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:166) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:427) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$5(SimpleDequePool.java:309) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:189) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:565) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259) ~[reactor-core-3.4.3.jar!/:3.4.3]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:464) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise$1.tryFailure(TransportConnector.java:515) ~[reactor-netty-core-1.0.4.jar!/:1.0.4]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+		at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /172.25.16.187:8080
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.59.Final.jar!/:4.1.59.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
